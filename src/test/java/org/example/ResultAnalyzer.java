@@ -47,7 +47,7 @@ public class ResultAnalyzer implements TestWatcher, AfterAllCallback {
     public void testFailed(ExtensionContext context, Throwable cause) {
         testResultsStatus.add(TestResultStatus.FAILED);
     }
-
+// niye gelmiyor
     @Override
     public void afterAll(ExtensionContext context) throws Exception {
         Map<TestResultStatus, Long> summary = testResultsStatus.stream()
